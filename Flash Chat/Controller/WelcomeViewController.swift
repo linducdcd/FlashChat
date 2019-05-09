@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Firebase
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    // MARK: - action Button
+    @IBAction func registerPressed(_ sender: Any) {
+        
+        //TODO: Set up new user
+        
+    }
+    
+    @IBAction func loginPressed(_ sender: Any) {
+    }
+    
 }
 
