@@ -23,8 +23,6 @@ class WelcomeViewController: UIViewController {
     // MARK: - action Button
     @IBAction func registerPressed(_ sender: Any) {
         
-        //TODO: Set up new user
-        
     }
     
     @IBAction func loginPressed(_ sender: Any) {

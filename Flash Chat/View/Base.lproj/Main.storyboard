@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0az-CL-3hj"/>
-                                    <segue destination="cHZ-sl-Ne0" kind="show" identifier="goToLogIn" id="SNZ-Hg-0B1"/>
+                                    <segue destination="cHZ-sl-Ne0" kind="show" identifier="goToLogIn" id="Lwe-MY-fs5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +93,6 @@
                     <navigationItem key="navigationItem" id="SUJ-7J-bs3"/>
                     <connections>
                         <outlet property="emailTextField" destination="jvh-Zg-5Nv" id="2e7-bK-52L"/>
-                        <outlet property="loginPressed" destination="RY4-1n-waR" id="jb4-fx-yNp"/>
                         <outlet property="passwordTextField" destination="TKx-L4-xFS" id="ZLm-2K-ec3"/>
                         <segue destination="cJM-BU-xex" kind="show" identifier="goToChat" id="8dT-b0-AOQ"/>
                     </connections>
