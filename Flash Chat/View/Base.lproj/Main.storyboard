@@ -18,20 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-1S-M21">
-                                <rect key="frame" x="16" y="519" width="330" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.31176325770000002" blue="0.31704017420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0az-CL-3hj"/>
-                                    <segue destination="y9r-wn-R2A" kind="push" identifier="goToRegistration" id="edT-rz-ffO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tww-9D-Jh1">
-                                <rect key="frame" x="16" y="467" width="330" height="44"/>
+                                <rect key="frame" x="16" y="527" width="330" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Register">
@@ -39,7 +27,19 @@
                                 </state>
                                 <connections>
                                     <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xj1-nl-dIP"/>
-                                    <segue destination="cHZ-sl-Ne0" kind="push" identifier="goToLogin" id="nzf-u8-HBn"/>
+                                    <segue destination="y9r-wn-R2A" kind="show" identifier="goToRegistration" id="xtH-bA-Ajc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-1S-M21">
+                                <rect key="frame" x="16" y="471" width="330" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.31176325770000002" blue="0.31704017420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0az-CL-3hj"/>
+                                    <segue destination="cHZ-sl-Ne0" kind="show" identifier="goToLogIn" id="SNZ-Hg-0B1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,7 +48,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="80g-Jr-Ire"/>
                     <connections>
-                        <segue destination="cJM-BU-xex" kind="push" identifier="goToChat" id="IP8-qi-Dad"/>
+                        <segue destination="cJM-BU-xex" kind="show" identifier="goToChat" id="IP8-qi-Dad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,7 +69,7 @@
                                 <color key="backgroundColor" red="1" green="0.31176325770000002" blue="0.31704017420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="cJM-BU-xex" kind="push" id="2UJ-xG-IyZ"/>
+                                    <action selector="loginPressed:" destination="cHZ-sl-Ne0" eventType="touchUpInside" id="5FJ-pl-VRz"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvh-Zg-5Nv">
@@ -84,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,6 +95,7 @@
                         <outlet property="emailTextField" destination="jvh-Zg-5Nv" id="2e7-bK-52L"/>
                         <outlet property="loginPressed" destination="RY4-1n-waR" id="jb4-fx-yNp"/>
                         <outlet property="passwordTextField" destination="TKx-L4-xFS" id="ZLm-2K-ec3"/>
+                        <segue destination="cJM-BU-xex" kind="show" identifier="goToChat" id="8dT-b0-AOQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9n-pP-Eu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +119,6 @@
                                 </state>
                                 <connections>
                                     <action selector="registerPressed:" destination="y9r-wn-R2A" eventType="touchUpInside" id="w37-mQ-FEp"/>
-                                    <segue destination="cJM-BU-xex" kind="push" id="e9i-na-pct"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzI-P7-qLf">
@@ -133,7 +133,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.26500564059346338" green="0.66666668653488159" blue="0.22410988230209186" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,6 +143,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="VzI-P7-qLf" id="J51-i4-fi2"/>
                         <outlet property="passwordTextField" destination="gqj-I9-sGE" id="fgE-Po-8np"/>
+                        <segue destination="cJM-BU-xex" kind="show" identifier="goToChat" id="8RL-x1-eFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1C-hC-BvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,7 +181,13 @@
                         <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Dmc-07-L8L"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Fmf-lb-3Qv"/>
+                    <navigationItem key="navigationItem" id="Fmf-lb-3Qv">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="25c-tC-TFB">
+                            <connections>
+                                <action selector="logOutPressed:" destination="cJM-BU-xex" id="R9c-lh-ceg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7g-Ct-H0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +213,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2UJ-xG-IyZ"/>
+        <segue reference="8dT-b0-AOQ"/>
     </inferredMetricsTieBreakers>
 </document>
