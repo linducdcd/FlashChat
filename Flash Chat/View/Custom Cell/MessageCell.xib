@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customMessageCell" rowHeight="64" id="gmU-k4-pP1" customClass="CustomMessageCell" customModule="Flash_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gmU-k4-pP1" id="2Sf-Ai-1UF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xd9-pD-Hq5">
+                        <rect key="frame" x="0.0" y="0.0" width="68" height="63.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-1K-Uxe">
+                                <rect key="frame" x="0.0" y="0.0" width="72" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="yVl-Gn-2e5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7SJ-1K-Uxe" secondAttribute="bottom" id="4KW-xK-CES"/>
+                            <constraint firstItem="7SJ-1K-Uxe" firstAttribute="leading" secondItem="Xd9-pD-Hq5" secondAttribute="leading" id="BH4-zs-mza"/>
+                            <constraint firstAttribute="width" constant="68" id="kye-Se-LVO"/>
+                            <constraint firstItem="7SJ-1K-Uxe" firstAttribute="top" secondItem="Xd9-pD-Hq5" secondAttribute="top" id="tfy-Km-LED"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rI-Lv-VId" userLabel="Message Background">
+                        <rect key="frame" x="76" y="0.0" width="299" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-Hj-dU0" userLabel="messages">
+                                <rect key="frame" x="8" y="14.5" width="283" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="283" id="umh-Uf-ffB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mri-tF-o56" userLabel="username">
+                                <rect key="frame" x="8" y="0.0" width="146" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="6zx-1n-Xt8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zXz-Hj-dU0" secondAttribute="trailing" constant="8" id="Lnd-5b-0T9"/>
+                            <constraint firstItem="mri-tF-o56" firstAttribute="leading" secondItem="1rI-Lv-VId" secondAttribute="leading" constant="8" id="MUQ-tm-d59"/>
+                            <constraint firstItem="zXz-Hj-dU0" firstAttribute="top" secondItem="mri-tF-o56" secondAttribute="bottom" constant="2" id="RBN-xd-AZX"/>
+                            <constraint firstItem="zXz-Hj-dU0" firstAttribute="top" secondItem="mri-tF-o56" secondAttribute="bottom" constant="2.5" id="kF6-cB-ocW"/>
+                            <constraint firstAttribute="width" constant="299" id="okW-eR-s4a"/>
+                            <constraint firstItem="mri-tF-o56" firstAttribute="top" secondItem="1rI-Lv-VId" secondAttribute="top" id="wC3-ZC-L1V"/>
+                            <constraint firstAttribute="bottom" secondItem="zXz-Hj-dU0" secondAttribute="bottom" constant="7" id="yuF-XG-maO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xd9-pD-Hq5" firstAttribute="top" secondItem="2Sf-Ai-1UF" secondAttribute="top" id="R46-8Z-rIQ"/>
+                    <constraint firstAttribute="trailing" secondItem="1rI-Lv-VId" secondAttribute="trailing" id="gdA-ct-xIe"/>
+                    <constraint firstItem="Xd9-pD-Hq5" firstAttribute="leading" secondItem="2Sf-Ai-1UF" secondAttribute="leading" id="otb-YH-fvN"/>
+                    <constraint firstItem="1rI-Lv-VId" firstAttribute="top" secondItem="2Sf-Ai-1UF" secondAttribute="top" id="qDT-Xl-pMJ"/>
+                    <constraint firstAttribute="bottom" secondItem="1rI-Lv-VId" secondAttribute="bottom" id="sA3-Eb-eKq"/>
+                    <constraint firstAttribute="bottom" secondItem="Xd9-pD-Hq5" secondAttribute="bottom" id="tpL-sX-hBH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatorImagrView" destination="7SJ-1K-Uxe" id="Hnh-Fe-ImP"/>
+                <outlet property="messageBackground" destination="1rI-Lv-VId" id="bEs-gg-Vqr"/>
+                <outlet property="messageBody" destination="zXz-Hj-dU0" id="zhH-at-s7Q"/>
+                <outlet property="senderUserName" destination="mri-tF-o56" id="7aH-zd-Aee"/>
+            </connections>
+            <point key="canvasLocation" x="169.5" y="-590"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -13,6 +13,8 @@
 		FF0018A92283F5B60078D88F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0018A82283F5B60078D88F /* ChatViewController.swift */; };
 		FF0018AB2283F5F70078D88F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0018AA2283F5F70078D88F /* LoginViewController.swift */; };
 		FF0018AD2283F60D0078D88F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0018AC2283F60D0078D88F /* RegisterViewController.swift */; };
+		FF929ACC2285F55B005B69B9 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF929ACA2285F55B005B69B9 /* MessageCell.xib */; };
+		FF929AD02285F828005B69B9 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF929ACF2285F828005B69B9 /* CustomMessageCell.swift */; };
 		FFDE44D122833F5C007DE158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDE44D022833F5C007DE158 /* AppDelegate.swift */; };
 		FFDE44D322833F5C007DE158 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDE44D222833F5C007DE158 /* WelcomeViewController.swift */; };
 		FFDE44D622833F5C007DE158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE44D422833F5C007DE158 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		FF0018A82283F5B60078D88F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		FF0018AA2283F5F70078D88F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF0018AC2283F60D0078D88F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FF929ACA2285F55B005B69B9 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		FF929ACF2285F828005B69B9 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		FFDE44CD22833F5C007DE158 /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDE44D022833F5C007DE158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDE44D222833F5C007DE158 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			children = (
 				FFDE44D922833F5E007DE158 /* LaunchScreen.storyboard */,
 				FFDE44D422833F5C007DE158 /* Main.storyboard */,
+				FFC073F82285E302001D8CBE /* Custom Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,6 +100,15 @@
 				FF0018A12283D3C60078D88F /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC073F82285E302001D8CBE /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF929ACF2285F828005B69B9 /* CustomMessageCell.swift */,
+				FF929ACA2285F55B005B69B9 /* MessageCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 		FFDE44C422833F5C007DE158 = {
@@ -189,6 +203,7 @@
 			files = (
 				FFDE44DB22833F5E007DE158 /* LaunchScreen.storyboard in Resources */,
 				FF0018A22283D3C60078D88F /* GoogleService-Info.plist in Resources */,
+				FF929ACC2285F55B005B69B9 /* MessageCell.xib in Resources */,
 				FFDE44D822833F5E007DE158 /* Assets.xcassets in Resources */,
 				FF0018A72283D7BD0078D88F /* Default-568h@2x.png in Resources */,
 				FFDE44D622833F5C007DE158 /* Main.storyboard in Resources */,
@@ -251,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF929AD02285F828005B69B9 /* CustomMessageCell.swift in Sources */,
 				FF0018AB2283F5F70078D88F /* LoginViewController.swift in Sources */,
 				FF0018AD2283F60D0078D88F /* RegisterViewController.swift in Sources */,
 				FFDE44D322833F5C007DE158 /* WelcomeViewController.swift in Sources */,

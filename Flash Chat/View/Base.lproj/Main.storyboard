@@ -161,6 +161,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="wuc-Cl-DIM">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wuc-Cl-DIM" id="3bt-xo-3qf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYV-Dd-zMa">
                                 <rect key="frame" x="16" y="631" width="281" height="30"/>
@@ -187,6 +197,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageTableView" destination="IEc-BL-XqZ" id="RYO-tT-IaE"/>
+                        <outlet property="messageTextfield" destination="DYV-Dd-zMa" id="DjH-Q4-Eea"/>
+                        <outlet property="sendButton" destination="8KB-FB-tGh" id="4Ut-Sm-Pgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7g-Ct-H0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,6 +227,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8dT-b0-AOQ"/>
+        <segue reference="IP8-qi-Dad"/>
     </inferredMetricsTieBreakers>
 </document>
