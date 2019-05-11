@@ -39,9 +39,9 @@
                         <rect key="frame" x="76" y="0.0" width="299" height="64"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-Hj-dU0" userLabel="messages">
-                                <rect key="frame" x="8" y="14.5" width="283" height="42.5"/>
+                                <rect key="frame" x="8" y="28.5" width="283" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="283" id="umh-Uf-ffB"/>
+                                    <constraint firstAttribute="width" constant="283" id="nso-3x-iEG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -61,11 +61,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zXz-Hj-dU0" secondAttribute="trailing" constant="8" id="Lnd-5b-0T9"/>
                             <constraint firstItem="mri-tF-o56" firstAttribute="leading" secondItem="1rI-Lv-VId" secondAttribute="leading" constant="8" id="MUQ-tm-d59"/>
-                            <constraint firstItem="zXz-Hj-dU0" firstAttribute="top" secondItem="mri-tF-o56" secondAttribute="bottom" constant="2" id="RBN-xd-AZX"/>
-                            <constraint firstItem="zXz-Hj-dU0" firstAttribute="top" secondItem="mri-tF-o56" secondAttribute="bottom" constant="2.5" id="kF6-cB-ocW"/>
+                            <constraint firstAttribute="bottom" secondItem="zXz-Hj-dU0" secondAttribute="bottom" constant="15" id="epS-N0-JJr"/>
                             <constraint firstAttribute="width" constant="299" id="okW-eR-s4a"/>
                             <constraint firstItem="mri-tF-o56" firstAttribute="top" secondItem="1rI-Lv-VId" secondAttribute="top" id="wC3-ZC-L1V"/>
-                            <constraint firstAttribute="bottom" secondItem="zXz-Hj-dU0" secondAttribute="bottom" constant="7" id="yuF-XG-maO"/>
                         </constraints>
                     </view>
                 </subviews>

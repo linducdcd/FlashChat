@@ -20,6 +20,7 @@
 		FFDE44D622833F5C007DE158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE44D422833F5C007DE158 /* Main.storyboard */; };
 		FFDE44D822833F5E007DE158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDE44D722833F5E007DE158 /* Assets.xcassets */; };
 		FFDE44DB22833F5E007DE158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDE44D922833F5E007DE158 /* LaunchScreen.storyboard */; };
+		FFF3B8F42286DFC600435DAD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF3B8F32286DFC600435DAD /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FFDE44D722833F5E007DE158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFDE44DA22833F5E007DE158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFDE44DC22833F5E007DE158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF3B8F32286DFC600435DAD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +135,21 @@
 		FFDE44CF22833F5C007DE158 /* Flash Chat */ = {
 			isa = PBXGroup;
 			children = (
+				FFF3B8F22286DFA500435DAD /* Model */,
 				FF0018A42283D4250078D88F /* Controller */,
 				FF0018A32283D40E0078D88F /* View */,
 				FFDE44D722833F5E007DE158 /* Assets.xcassets */,
 				FF0018A52283D45D0078D88F /* Supporting Files */,
 			);
 			path = "Flash Chat";
+			sourceTree = "<group>";
+		};
+		FFF3B8F22286DFA500435DAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFF3B8F32286DFC600435DAD /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				FFDE44D322833F5C007DE158 /* WelcomeViewController.swift in Sources */,
 				FF0018A92283F5B60078D88F /* ChatViewController.swift in Sources */,
 				FFDE44D122833F5C007DE158 /* AppDelegate.swift in Sources */,
+				FFF3B8F42286DFC600435DAD /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
