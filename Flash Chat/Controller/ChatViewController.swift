@@ -9,10 +9,11 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
     
     
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageTextfield: UITextField!
     @IBOutlet weak var messageTableView: UITableView!
     @IBOutlet weak var sendButton: UIButton!
@@ -43,7 +44,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         messageTableView.delegate = self
         messageTableView.dataSource = self
         
+        //TODO: Set yourself at the delagate of the text field
         
+        messageTextfield.delegate = self
+        
+        //TODO: set the tapGesture
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
+        messageTableView.addGestureRecognizer(tapGesture)
         
         //TODO: Register MessageCell.xib
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
@@ -72,6 +79,16 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 3
     }
 
+    //TODO: Declare tableViewTapped
+    @objc func tableViewTapped() {
+        
+        messageTextfield.endEditing(true)
+    }
+    
+    
+    
+    
+    
     //TODO: Declare configureTableView
     func configureTableView () {
         messageTableView.rowHeight = UITableViewAutomaticDimension
@@ -79,5 +96,23 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    
+    //TODO: Declare textFieldDidEndingEditing
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.16) {
+            self.heightConstraint.constant = 50
+            self.view.layoutIfNeeded()
+        }    }
 
+    //TODO: Declare textFieldDidBeginingEditing
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        
+        UIView.animate(withDuration: 0.16) {
+            self.heightConstraint.constant = 308
+            self.view.layoutIfNeeded()
+        }
+    }
 }
