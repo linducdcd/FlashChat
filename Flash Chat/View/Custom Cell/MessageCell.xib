@@ -24,6 +24,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-1K-Uxe">
                                 <rect key="frame" x="0.0" y="0.0" width="72" height="64"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="JMG-hw-iE9"/>
+                                    <constraint firstAttribute="height" constant="64" id="gd2-Nf-hyQ"/>
                                     <constraint firstAttribute="width" constant="72" id="yVl-Gn-2e5"/>
                                 </constraints>
                             </imageView>

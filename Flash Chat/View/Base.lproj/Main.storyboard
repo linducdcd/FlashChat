@@ -178,6 +178,9 @@
                                         <state key="normal" title="Send">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="cJM-BU-xex" eventType="touchUpInside" id="El0-Oa-4Pa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.31176325770000002" blue="0.31704017420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -187,7 +190,6 @@
                                     <constraint firstAttribute="trailing" secondItem="8KB-FB-tGh" secondAttribute="trailing" constant="2" id="T1r-Oq-Ccs"/>
                                     <constraint firstItem="DYV-Dd-zMa" firstAttribute="leading" secondItem="U61-2X-QOv" secondAttribute="leading" constant="8" id="gmu-4j-pJz"/>
                                     <constraint firstItem="DYV-Dd-zMa" firstAttribute="top" secondItem="U61-2X-QOv" secondAttribute="top" constant="8" id="uE1-3j-HEf"/>
-                                    <constraint firstAttribute="bottom" secondItem="8KB-FB-tGh" secondAttribute="bottom" constant="8" id="wMh-3O-gcB"/>
                                     <constraint firstItem="8KB-FB-tGh" firstAttribute="leading" secondItem="DYV-Dd-zMa" secondAttribute="trailing" constant="16" id="z5Z-Bu-c18"/>
                                 </constraints>
                             </view>
@@ -229,7 +231,7 @@
                         <outlet property="heightConstraint" destination="DWc-8X-GnW" id="qLX-Zo-xxW"/>
                         <outlet property="messageTableView" destination="IEc-BL-XqZ" id="RYO-tT-IaE"/>
                         <outlet property="messageTextfield" destination="DYV-Dd-zMa" id="DjH-Q4-Eea"/>
-                        <outlet property="sendButton" destination="8KB-FB-tGh" id="4Ut-Sm-Pgu"/>
+                        <outlet property="sendButton" destination="8KB-FB-tGh" id="fa7-4Q-bUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7g-Ct-H0H" userLabel="First Responder" sceneMemberID="firstResponder"/>

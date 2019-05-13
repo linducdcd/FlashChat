@@ -15,6 +15,6 @@ class CustomMessageCell: UITableViewCell {
     @IBOutlet weak var avatorImagrView: UIImageView!
     @IBOutlet weak var messageBackground: UIView!
     @IBOutlet weak var messageBody: UILabel!
-    @IBOutlet weak var senderUserName: UIView!
+    @IBOutlet weak var senderUserName: UILabel!
     
 }
